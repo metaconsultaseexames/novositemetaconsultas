@@ -1,0 +1,28 @@
+{
+  "name": "FAQ",
+  "type": "object",
+  "properties": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Consultas",
+        "Exames",
+        "Conv\u00eanios",
+        "Geral"
+      ]
+    },
+    "order": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "question",
+    "answer"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Specialty",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome da especialidade"
+    },
+    "slug": {
+      "type": "string",
+      "description": "Slug para URL"
+    },
+    "short_description": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o curta para cards"
+    },
+    "full_description": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o completa da especialidade"
+    },
+    "icon_name": {
+      "type": "string",
+      "description": "Nome do \u00edcone lucide-react"
+    },
+    "symptoms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Lista de sintomas/indica\u00e7\u00f5es"
+    },
+    "doctor_name": {
+      "type": "string",
+      "description": "Nome do m\u00e9dico respons\u00e1vel"
+    },
+    "doctor_crm": {
+      "type": "string",
+      "description": "CRM do m\u00e9dico"
+    },
+    "doctor_rqe": {
+      "type": "string",
+      "description": "RQE do m\u00e9dico"
+    },
+    "doctor_photo": {
+      "type": "string",
+      "description": "URL da foto do m\u00e9dico"
+    },
+    "color_theme": {
+      "type": "string",
+      "description": "Cor tem\u00e1tica da especialidade"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "description": "Destaque na home"
+    },
+    "order": {
+      "type": "number",
+      "description": "Ordem de exibi\u00e7\u00e3o"
+    },
+    "pain_points": {
+      "type": "string",
+      "description": "Dores do paciente para destaque"
+    },
+    "meta_differential": {
+      "type": "string",
+      "description": "Diferencial da Cl\u00ednica Meta"
+    },
+    "checkup_title": {
+      "type": "string",
+      "description": "T\u00edtulo do check-up preventivo"
+    },
+    "checkup_message": {
+      "type": "string",
+      "description": "Mensagem do check-up preventivo"
+    },
+    "gallery_images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "caption": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Imagens para carrossel din\u00e2mico"
+    }
+  },
+  "required": [
+    "name",
+    "slug"
+  ]
+}

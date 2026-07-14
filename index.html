@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- ===== BLOCO 1: DataLayer + Consent Mode v2 ===== -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+
+    window.dataLayer.push({
+      'pageType': 'landing_page',
+      'pageTitle': document.title,
+      'pageUrl': window.location.href,
+      'clinicId': 'meta_consultas_exames',
+      'clinicName': 'Meta Consultas e Exames',
+      'clinicSegment': 'saude_popular',
+      'clinicCity': 'Rio de Janeiro',
+      'clinicState': 'RJ'
+    });
+    </script>
+
+    <!-- ===== BLOCO 2: Persistência de UTMs ===== -->
+    <script>
+    (function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var utms = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid','ttclid'];
+      var dataToPush = {};
+      utms.forEach(function(p) {
+        var val = urlParams.get(p);
+        if (val) { dataToPush[p] = val; sessionStorage.setItem('meta_'+p, val); }
+      });
+      if (Object.keys(dataToPush).length) window.dataLayer.push(dataToPush);
+    })();
+    </script>
+
+    <!-- ===== BLOCO 3: GTM Container (GTM-5K426LXT) ===== -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5K426LXT');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="icon" type="image/png" href="https://media.base44.com/images/public/6a3dce71c9e933d4c38e8c9c/44383c69e_LogoMetacomfundotransparente.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Clínica Meta — Consultas e Exames | Saúde de Qualidade ao Seu Alcance</title>
+    <meta name="description" content="Clínica Meta: consultas médicas, exames e procedimentos com qualidade, tecnologia e acolhimento. Agende sua consulta pelo WhatsApp." />
+    <meta property="og:title" content="Clínica Meta — Consultas e Exames" />
+    <meta property="og:description" content="Saúde de qualidade ao seu alcance. Especialidades médicas, exames e procedimentos com tecnologia de ponta." />
+    <meta property="og:image" content="https://media.base44.com/images/public/6a3dce71c9e933d4c38e8c9c/44383c69e_LogoMetacomfundotransparente.png" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Clínica Meta",
+        "description": "Clínica médica popular com atendimento de excelência, agilidade nos resultados e cuidado humanizado. Consultas, exames e procedimentos com tecnologia de ponta.",
+        "url": "https://clinicameta.com.br",
+        "telephone": "+55-00-0000-0000",
+        "priceRange": "$$",
+        "medicalSpecialty": ["Cardiology", "Gynecology", "Pediatrics", "GeneralPractice"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR",
+          "addressLocality": "Sua Cidade",
+          "addressRegion": "UF",
+          "streetAddress": "Endereço da Clínica, 123"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K426LXT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "BlogPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string",
+      "description": "Conte\u00fado em markdown"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Preven\u00e7\u00e3o",
+        "Alimenta\u00e7\u00e3o",
+        "Novidades M\u00e9dicas",
+        "Campanhas"
+      ]
+    },
+    "cover_image": {
+      "type": "string"
+    },
+    "is_featured": {
+      "type": "boolean"
+    },
+    "author": {
+      "type": "string"
+    },
+    "published_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "title",
+    "slug"
+  ]
+}
